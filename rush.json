@@ -1,0 +1,42 @@
+{
+    "$schema": "https://developer.microsoft.com/json-schemas/rush/v5/rush.schema.json",
+    "rushVersion": "5.109.2",
+    "pnpmVersion": "8.9.2",
+    "ensureConsistentVersions": true,
+    "pnpmOptions": {
+      "strictPeerDependencies": false
+    },
+    "nodeSupportedVersionRange": ">=16.0.0",
+    "suppressNodeLtsWarning": true,
+    "projectFolderMinDepth": 1,
+    "projectFolderMaxDepth": 7,
+    "gitPolicy": {},
+    "repository": {
+      "defaultBranch": "main",
+      "url": "https://github.com/microsoftgraph/typespec-msgraph"
+    },
+    "eventHooks": {
+      "preRushInstall": [
+      ],
+      "postRushInstall": [],
+      "preRushBuild": [],
+      "postRushBuild": []
+    },
+    "variants": [],
+    "telemetryEnabled": false,
+    "projects": [
+      {
+        "packageName": "typespec-samples",
+        "projectFolder": "packages/samples",
+        "reviewCategory": "production",
+        "shouldPublish": false
+      },
+      {
+        "packageName": "myLibrary",
+        "projectFolder": "packages/myLibrary",
+        "reviewCategory": "production",
+        "shouldPublish": false
+      }
+    ]
+  }
+  

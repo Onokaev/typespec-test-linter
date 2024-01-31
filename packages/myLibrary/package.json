@@ -1,0 +1,23 @@
+{
+  "name": "myLibrary",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/src/index.js",
+  "tspMain": "lib/main.tsp",
+  "scripts": {
+    "clean": "rimraf ./dist ./temp",
+    "build": "tsc -p .",
+    "watch": "tsc -p . --watch",
+    "test": "node --test ./dist/test"
+  },
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "peerDependencies": {
+    "@typespec/compiler": "^0.52.0",
+    "@microsoft/typespec-msgraph": "0.0.1-Preview.13"
+  },
+  "devDependencies": {
+    "typescript": "^5.3.3"
+  }
+}

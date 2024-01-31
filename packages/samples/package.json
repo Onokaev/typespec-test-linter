@@ -1,0 +1,46 @@
+{
+    "name": "typespec-samples",
+    "private": true,
+    "version": "1.0.0",
+    "author": "Microsoft Corporation",
+    "description": "Samples for TypeSpec",
+    "homepage": "https://github.com/microsoftgraph/typespec-msgraph",
+    "readme": "https://github.com/microsoftgraph/typespec-msgraph/blob/master/readme.md",
+    "license": "MIT",
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/microsoftgraph/typespec-msgraph.git"
+    },
+    "bugs": {
+      "url": "https://github.com/microsoftgraph/typespec-msgraph/issues"
+    },
+    "keywords": [
+      "typespec",
+      "cli"
+    ],
+    "type": "module",
+    "engines": {
+      "node": ">=16.0.0"
+    },
+    "scripts": {
+      "build": "echo \"nothing to do for samples\"",
+      "regen-samples": "node scripts/regen-samples.js"
+    },
+    "files": [
+      "lib/*.tsp",
+      "dist/**"
+    ],
+    "dependencies": {
+      "myLibrary": "1.0.0",
+      "@typespec/compiler": "~0.52.0",
+      "@typespec/http": "~0.52.0",
+      "@typespec/html-program-viewer": "~0.52.0",
+      "@microsoft/typespec-msgraph": "0.0.1-Preview.13"
+    },
+    "devDependencies": {
+      "@types/mkdirp": "~1.0.1",
+      "@typespec/internal-build-utils": "~0.52.0",
+      "mkdirp": "~1.0.4"
+    }
+  }
+  
